@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  moe-sticker-bot:
+    image: ghcr.io/star-39/moe-sticker-bot
+    command: /moe-sticker-bot --bot_token={Please place your Telegram bot token here.}
+    volumes:
+      - ./data:/{Replace it with your bot name.}_data
